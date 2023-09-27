@@ -1,0 +1,264 @@
+html{
+  margin: -8px;
+  font-family: 'Poppins';
+  background-color: #212121;
+  color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.root{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.blueText{
+  color: #4C70EF;
+}
+
+.Hero{
+  background-image: url("./Img/bgImg.png");
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  margin-bottom: 80px;
+}
+                                      /* Nav Bar */
+.navBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.navBarRight > a{
+  transition: color 0.5s;
+}
+.navBarRight > a:hover {
+  color: #4380fa;
+}
+                                      /* Nav Bar Left */
+.navBarLeft{
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+  margin-left: 30px;
+
+}
+.Logo{
+  height: 35px;
+}
+                                      /* Nav Bar Right */
+.navBarRight{
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  
+}
+                                      /* Header */
+.Header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.NumeleMeu{
+  font-size: 2.5rem;
+  margin: 0;
+}
+.SocialContainer{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+}
+.SocialContainer > a >img{
+  transition: transform 250ms;
+}
+.SocialContainer > a >img:hover{
+  transform: scale(1.1)
+}
+                                      /* About Section */
+
+#About{
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+                                      /* About Section Left*/
+.AboutImageContainer{
+  border-radius: 24px 0 24px;
+  border: #FFFFFF solid 3px;
+  width: fit-content;
+  height: fit-content;
+}
+.AboutImage{
+  position: relative;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 24px 0 24px;
+}
+                                      /* About Section Right */
+.overHead{
+  font-size: 1.2rem;
+}
+.AboutName{
+  font-size: 2rem;
+}
+.AboutDesc{
+  color: #B0ADAD;
+  font-size: 0.9rem;
+  line-height: 1.45rem;
+  font-weight: normal;
+}
+
+                                      /* What I Know section */
+#WhatIKnow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+
+}
+.SkillContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 70px;
+  margin-top: 30px;
+  padding: 0 30px 0 30px;
+}
+.skillItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ItemDesc{
+  font-size: 0.6rem;
+}
+
+.ReactLogo{
+  transition: transform 250ms;
+  animation: rotating 4s linear infinite;
+
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.ReactLogo:hover{
+  transform: translateY(-10px);
+}
+.skillItem > img {
+  transition: transform 250ms;
+}
+.skillItem > img:hover{
+  transform: translatey(-10px);
+}
+                                      /* Portfolio section */
+#Portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+
+}
+.portfolioHead{
+  font-size: 3rem;
+  margin: 0 0 30px 0;
+}
+
+                                      /* Contact section */
+.Contact{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.contactContainer{
+  border-radius: 12px;
+  background-color: #292C36;
+  text-align: center;
+  padding: 50px;
+  width: 50%;
+}
+.contactButton{
+  background-color: #558FFF;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 30px;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: transform 250ms;
+}
+.contactButton:hover{
+  transform: scale(1.05);
+}
+
+
+                                      /* Contact section */
+.footer{
+  background-color: #292C36;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 0 15px;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+  .AboutImage{
+    height: 150px;
+  }
+  .AboutDesc{
+    font-size: 0.4rem;
+    line-height: 1rem;
+  }
+  .overHead{
+    font-size: 0.6rem;
+  }
+  .AboutName{
+    font-size: 1rem;
+  }
+  html{
+    width: fit-content;
+  }
+
+}
